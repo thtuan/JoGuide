@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/rlFragmentMap"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_500"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_large">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/iv_avatar"
+                style="@style/JocoLargeAvatar"
+                android:layout_width="@dimen/avatar_width_la"
+                android:layout_height="@dimen/avatar_height_la"
+                android:src="@drawable/img_default_error"
+                app:siBorderColor="@color/white"
+                app:siBorderWidth="2dip"/>
+
+            <ProgressBar
+                android:id="@+id/prLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_large"
+            android:layout_toRightOf="@+id/rl_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/JocoTitleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+        <!--<RelativeLayout
+            android:id="@+id/rl_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_logout"/>
+
+        </RelativeLayout>-->
+
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/llMyProfile"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:background="@drawable/selector_bg"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="@dimen/padding_large">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/icon_size"-->
+            <!--android:layout_height="@dimen/icon_size"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_margin="@dimen/margin_large"-->
+            <!--android:src="@drawable/ic_user_green"/>-->
+
+            <!--<TextView-->
+            <!--style="@style/JocoView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/text_my_profile"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/llTimeToGo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:background="@drawable/selector_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="@dimen/padding_large">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/icon_size"-->
+            <!--android:layout_height="@dimen/icon_size"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_margin="@dimen/margin_large"-->
+            <!--android:src="@drawable/ic_location_fill_green"/>-->
+
+            <!--<TextView-->
+            <!--style="@style/JocoView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/text_where_time_to_go"/>-->
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:id="@+id/llSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_search_green"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_search"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_marker_grey_left_menu"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_create_new_accommodation"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNewTour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_car_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_new_tour"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPromotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_sale_green"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_promotion"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCreateLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_create_location"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_create_new_accommodation"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llTours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_large"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_car_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_my_tour"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_favourite_light_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_favourite_accommodation"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_bell_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_notification"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvCountNotification"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:textColor="@color/blue"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llStatistic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_large"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_statistics_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_statistics"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_large"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_feedback_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_feedback"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFeedbackJoCo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_feedback_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_feedback"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_star_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_rating_app"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWeather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_large"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_setting_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thời tiết"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_large">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_large"
+                    android:src="@drawable/ic_exit_grey"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_logout"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

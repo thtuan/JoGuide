@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/llMain"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector_bg"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llWeather"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <!--<com.thbs.skycons.library.MoonView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--app:bgColor="#ffffff"-->
+        <!--app:isStatic="true"-->
+        <!--app:strokeColor="#000000"/>-->
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvTemp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/JocoHeaderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3:00 PM"/>
+
+            <TextView
+                android:id="@+id/tvSummary"
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTemp"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="24 C"
+            android:textColor="@color/primary_500"/>
+    </RelativeLayout>
+</LinearLayout>

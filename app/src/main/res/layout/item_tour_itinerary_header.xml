@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/ivDay"
+        android:layout_width="@dimen/header_itinerary"
+        android:layout_height="@dimen/header_itinerary"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/itinerary_circular_white"
+        app:siBorderColor="@color/primary_500"
+        app:siBorderWidth="1dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDay"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tvDayValue"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textSize="@dimen/title_size_small"/>
+
+    </LinearLayout>
+
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="@dimen/header_itinerary"
+        android:layout_height="@dimen/header_itinerary"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_bg_avatar">
+    </com.github.siyamed.shapeimageview.CircularImageView>
+
+
+</FrameLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_place_detail"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:layout_weight="1">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_default_error"
+            app:siBorderColor="@color/border_place_map"
+            app:siBorderWidth="1dp"
+            app:siRadius="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="1dp"
+            android:background="@color/white_tran90"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <TextView
+                android:id="@+id/tvRatingPoint"
+                style="@style/Font.Roboto.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/primary_700"
+                android:textStyle="bold"/>
+
+
+            <RatingBar
+                android:id="@+id/rbRatingPoint"
+                style="@android:style/Widget.Material.Light.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/trasparent_bg"
+                android:progressTint="@color/primary_700"
+                android:rating="5"
+                android:secondaryProgressTint="@color/primary_500"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_large_bottom"
+        android:layout_marginRight="@dimen/margin_large_right"
+        android:layout_marginTop="@dimen/margin_large_top"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/Font.Roboto.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/primary_500"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPhoneNum"
+            style="@style/Font.Roboto.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone_orange"
+            android:drawablePadding="@dimen/padding_small"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="@dimen/padding_small"
+            android:textColor="@color/primary_500"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            style="@style/Font.Roboto.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_flag_orange"
+            android:drawablePadding="@dimen/padding_small"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:textColor="@color/primary_500"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+</LinearLayout>

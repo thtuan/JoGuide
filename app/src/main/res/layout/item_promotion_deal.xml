@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/rlBackground"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/divider_height"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/padding_large_top">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/frImage"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_photo"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/padding_large_right"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvPromotionDealName"
+        style="@style/JocoHeaderView"
+        android:textColor="@color/primary_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" android:layout_weight="1"
+        android:text="Khuyen mai vietjet giam 30% cho tat ca san pham nhe cac ban"
+        />
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/JocoView" android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1" android:text="22/12/1989"
+        android:textColor="@color/red"
+    />
+</LinearLayout>

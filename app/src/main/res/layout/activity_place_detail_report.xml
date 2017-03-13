@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:id="@+id/nsvView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/llMain"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            android:gravity="top"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:visibility="visible"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_500">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    style="@style/JocoMenuIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_icon_bg"
+                    android:src="@drawable/ic_back_white"/>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/JocoTitleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:layout_toRightOf="@+id/ivBack"
+                    android:background="@drawable/selector_icon_bg"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_back_white"
+                    android:text="@string/text_report_accommodation"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/ivDone"
+                    style="@style/JocoMenuIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/selector_icon_bg"
+                    android:src="@drawable/ic_done_white"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            style="@style/JocoThinHeaderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@color/grey_bg"
+            android:text="@string/text_report_information"/>
+
+        <com.boot.accommodation.common.control.JoCoEditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/text_reason_report_location"
+            android:maxLines="2"
+            android:padding="@dimen/padding_large"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@color/grey_bg"></View>
+
+        <TextView
+            android:id="@+id/tvHeader"
+            style="@style/JocoThinHeaderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@color/grey_bg"
+            android:text="@string/text_report_position"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="@string/text_update_wrong_position"/>
+
+        <FrameLayout
+            android:id="@+id/frMap"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_large"
+            android:layout_weight="1"
+            android:background="@color/primary_500"
+            android:padding="1dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"></ImageView>
+
+            <FrameLayout
+                android:id="@+id/frDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/ivGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:src="@android:color/transparent"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@color/white"
+                                                 android:orientation="vertical"
+                                                 tools:context="com.boot.accommodation.vp.tour.ScheduleActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            >
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="top"
+                android:background="?attr/colorPrimary"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_icon_bg"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/padding_top"
+                    android:src="@drawable/ic_back_white"/>
+
+                <TextView
+                    style="@style/JocoTitleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="@string/text_create_notification"
+                    android:textColor="@color/white"/>
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <Spinner
+            android:id="@+id/spNotificationSchedule"
+            style="@style/JocoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_comment"/>
+
+        <EditText
+            android:id="@+id/etNotificationTitleSchedule"
+            style="@style/JocoThinView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_comment"
+            android:padding="@dimen/padding_large"
+            android:hint="@string/text_title"
+            android:imeOptions="actionNext"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etNotificationMessageSchedule"
+            style="@style/JocoThinView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/border_comment"
+            android:gravity="top"
+            android:hint="@string/text_message"
+            android:imeOptions="actionDone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/JocoThinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_comment"
+                android:hint="@string/text_pick_date"
+                android:visibility="gone"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/JocoThinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_comment"
+                android:hint="@string/text_pick_time"
+                android:visibility="gone"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/tvNotificationSendSchedule"
+            style="@style/JocoTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_large"
+            android:background="@drawable/border_button_login"
+            android:duplicateParentState="false"
+            android:gravity="center"
+            android:text="@string/text_send"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

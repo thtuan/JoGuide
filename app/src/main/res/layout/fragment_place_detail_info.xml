@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:id="@+id/scDetailInfo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="@dimen/margin_top"
+                                            android:background="@color/white"
+                                            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/JocoThinHeaderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@color/grey_header_title"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/padding_large"
+            android:text="@string/text_accommodation_info">
+
+            <requestFocus/>
+        </TextView>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_bg"
+            android:columnCount="2">
+
+            <TableRow
+                android:id="@+id/tlAddress"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:padding="@dimen/padding">
+
+                <TextView
+                    style="@style/JocoTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:text="@string/text_address"
+                    android:textStyle="bold"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="0dp"
+                        android:gravity="left|center_vertical"
+                        />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tlPrice"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/JocoTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="@string/text_price"
+                    android:textStyle="bold"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="0dp"
+                        android:drawablePadding="@dimen/padding"
+                        android:gravity="right"
+                        android:visibility="visible"/>
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tlPhone"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:padding="@dimen/padding"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/JocoTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="@string/text_phone"
+                    android:textStyle="bold"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="0dp"
+                        android:drawableLeft="@drawable/ic_phone_orange"
+                        android:drawablePadding="@dimen/padding"
+                        android:gravity="right"
+                        android:textColor="@color/blue_highlight"
+                        android:visibility="visible"/>
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tlWebsite"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+
+                <TextView
+                    style="@style/JocoTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="@string/text_website"
+                    android:textStyle="bold"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvWebsite"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="0dp"
+                        android:gravity="right"
+                        android:textColor="@color/blue_highlight"/>
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tlOpeningTime"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+
+                <TextView
+                    style="@style/JocoTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="@string/text_opening_time"
+                    android:textStyle="bold"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvOpeningTime"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="0dp"
+                        android:gravity="right"/>
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tlBestTimeToGo"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:padding="@dimen/padding"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/JocoTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:text="@string/text_best_time_for_go"
+                    android:textStyle="bold"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvBestTimeToGo"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="0dp"
+                        android:gravity="left|center_vertical"
+                        />
+                </FrameLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/llOutStanding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/frOutStanding"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/JocoThinHeaderGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:background="@color/grey_header_title"
+                    android:padding="@dimen/padding_large"
+                    android:text="@string/text_out_standing"/>
+                <ImageView
+                    android:id="@+id/ivAcrossOutStading"
+                    style="@style/JocoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:rotation="90"
+                    android:src="@drawable/ic_next_grey"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin"></View>
+
+            <WebView
+                android:id="@+id/wvOutStanding"
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frPosition"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom">
+            <TextView
+                style="@style/JocoThinHeaderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/grey_header_title"
+                android:padding="@dimen/padding_large"
+                android:text="@string/text_accommodation_position"/>
+            <ImageView
+                android:id="@+id/ivAcrossPosition"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:rotation="90"
+                android:src="@drawable/ic_next_grey"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frMap"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="0dp"
+            android:background="@color/primary_500"
+            android:padding="1dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"></ImageView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin">
+
+                <FrameLayout
+                    android:id="@+id/frLocationMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drag_google_map"></FrameLayout>
+
+                <ImageView
+                    android:id="@+id/ivLocationMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:duplicateParentState="true"
+                    android:src="@android:color/transparent"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llSpecialFood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/frSpecialFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/JocoThinHeaderGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:background="@color/grey_header_title"
+                    android:padding="@dimen/padding_large"
+                    android:text="@string/text_special_food"/>
+                <ImageView
+                    android:id="@+id/ivAcrossSpecialFood"
+                    style="@style/JocoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:rotation="90"
+                    android:src="@drawable/ic_next_grey"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin"></View>
+
+            <WebView
+                android:id="@+id/wvSpecialFood"
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frIntro"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/JocoThinHeaderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/grey_header_title"
+                android:padding="@dimen/padding_large"
+                android:text="@string/text_accommodation_introduce"/>
+            <ImageView
+                android:id="@+id/ivAcrossIntro"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:rotation="90"
+                android:src="@drawable/ic_next_grey"/>
+        </FrameLayout>
+        <WebView
+            android:id="@+id/wvOverView"
+            style="@style/JocoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lnMap"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin"></View>
+
+        <LinearLayout
+            android:id="@+id/llToursRelate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/JocoThinHeaderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/grey_header_title"
+                android:padding="@dimen/padding_large"
+                android:text="@string/text_tour_relate_with_location"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvLocationRelate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

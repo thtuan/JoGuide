@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlFragmentMap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_tour_name_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textAppearance="@style/Font.Roboto.Bold.Italic"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tour_name_expand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/iv_user_avatar_expand"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="1dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/iv_user_avatar_expand"
+            android:textAppearance="@style/Font.Roboto.Italic"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_owner"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_total_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_total_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv_total_day"
+                android:textAppearance="@style/Font.Roboto.Regular"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_total_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/tv_total_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv_total_place"
+                android:textAppearance="@style/Font.Roboto.Regular"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_total_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/tv_total_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv_total_like"
+                android:textAppearance="@style/Font.Roboto.Regular"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

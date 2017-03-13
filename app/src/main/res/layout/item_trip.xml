@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rlFragmentMap"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/white"
+                android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_owner_avatar"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="0dp"
+                android:clickable="true">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/iv_owner_avatar"
+                    android:layout_width="@dimen/avatar_width"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_centerVertical="true"
+                    app:siBorderColor="@color/shadow_light"
+                    app:siBorderWidth="1dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/JocoTitleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_toRightOf="@+id/rl_owner_avatar"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:padding="0dp"
+                android:paddingTop="@dimen/margin_large"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/JocoView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_large_top">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_bg"/>
+
+            <ImageView
+                android:id="@+id/iv_total_day"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_total_day"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_total_day"
+                android:gravity="center"
+                android:textAppearance="@style/Font.Roboto.Thin"/>
+
+            <ImageView
+                android:id="@+id/iv_total_place"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_total_day"/>
+
+            <TextView
+                android:id="@+id/tv_total_place"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_total_place"
+                android:gravity="center"
+                android:textAppearance="@style/Font.Roboto.Thin"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_farvorite"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/rl_like"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_farvorite"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_like"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_large_right"
+                android:layout_toLeftOf="@+id/rl_share"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_large_left"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_photo"-->
+    <!--style="@style/JocoView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="180dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:scaleType="centerCrop"/>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:duplicateParentState="true">
+
+        <android.support.v4.view.ViewPager
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/vpImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_large_left"
+            />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/margin_large"
+            android:background="@color/black_trans40"
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="@dimen/padding"
+            android:textAppearance="@style/Font.Roboto.Bold.Italic"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

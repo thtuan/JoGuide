@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/etStatus"
+        style="@style/JocoPopupMenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/avatar_height_la"
+        android:hint="@string/text_what_do_you_think"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:background="@drawable/border_white"/>
+    <LinearLayout
+        android:background="@drawable/border_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_at"
+            android:background="@drawable/haft_border_grey"/>
+        <TextView
+            style="@style/JocoView"
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCheckedIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/llViewFeedback"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector_bg"
+              android:layout_margin="@dimen/margin"
+              android:orientation="vertical"
+              android:padding="@dimen/padding">
+
+    <TextView
+        style="@style/JocoTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/text_title_popup_view_feedback"/>
+
+    <LinearLayout
+        android:id="@+id/llListFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ivImagePopup"
+            style="@style/JocoSmallAvatar"
+            android:layout_width="@dimen/avatar_width"
+            android:layout_height="@dimen/avatar_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_error"/>
+
+        <TextView
+            android:id="@+id/tvIdTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+            <TextView
+                android:id="@+id/tvTourAndNamePopup"
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="0dp"
+                android:text="Tourist and Tourname"/>
+
+
+            <TextView
+                android:id="@+id/tvDateTimePopup"
+                style="@style/JocoThinSmallView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:drawablePadding="@dimen/padding"
+                android:drawableRight="@drawable/ic_clock_white"
+                android:padding="0dp"
+                android:text="Date Time"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContentPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="he is bad guide i had seen, so i never join tour of this company again !"/>/>
+
+    <TextView
+        android:id="@+id/tvIdFeedbackPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/llPick"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ivAvatar"
+            style="@style/JocoSmallAvatar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large_top"
+            android:padding="@dimen/padding_large"
+            android:src="@drawable/img_default_error"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckedTextView
+                    android:id="@+id/tvName"
+                    style="@style/JocoTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="0dp"
+
+                    android:drawablePadding="@dimen/padding_large"
+                    android:text="title"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:text="Detail"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/cbcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:duplicateParentState="true"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/grey_bg"/>
+</LinearLayout>

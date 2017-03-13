@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="total_day">
+        <item quantity="one">%d Ngày</item>
+        <item quantity="other">%d Ngày</item>
+    </plurals>
+    <plurals name="total_place">
+        <item quantity="one">%d Địa điểm</item>
+        <item quantity="other">%d Địa điểm</item>
+    </plurals>
+    <plurals name="total_like">
+        <item quantity="one">%d yêu thích</item>
+        <item quantity="other">%d yêu thích</item>
+    </plurals>
+    <plurals name="total_photo">
+        <item quantity="one">%d photo</item>
+        <item quantity="other">%d photos</item>
+    </plurals>
+    <plurals name="total_follower">
+        <item quantity="one">%d follower</item>
+        <item quantity="other">%d followers</item>
+    </plurals>
+    <plurals name="duration">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:id="@+id/rlFragmentMap"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/htab_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:gravity="top"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_500">
+
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    style="@style/JocoMenuIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_icon_bg"
+                    android:src="@drawable/ic_menu_white"/>
+
+                <com.boot.accommodation.common.control.JoCoEditText
+                    android:id="@+id/edSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_search"
+                    android:layout_marginTop="@dimen/margin_search"
+                    android:layout_toLeftOf="@+id/frFilter"
+                    android:layout_toRightOf="@+id/iv_menu"
+                    android:background="@drawable/bg_search_green"
+                    android:completionThreshold="1"
+                    android:cursorVisible="false"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/text_search"
+                    android:imeActionLabel="Search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:padding="@dimen/padding"
+                    android:textColor="@color/white"/>
+
+                <FrameLayout
+                    android:id="@+id/frFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <View
+                        style="@style/JocoMenuIcon"
+                        android:layout_width="@dimen/activity_horizontal_margin"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:background="@drawable/selector_icon_bg"
+                        android:src="@drawable/ic_filter_white"/>
+
+                    <ImageView
+                        android:id="@+id/ivFilter"
+                        style="@style/JocoMenuIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_icon_bg"
+                        android:src="@drawable/ic_filter_white"/>
+
+                </FrameLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <com.boot.accommodation.common.control.EventCalendar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.boot.accommodation.common.control.EventCalendar>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_home"
+            style="@style/JoCoNavigationTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fillViewport="false"
+            android:padding="0dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/primary_500"
+            app:tabMode="fixed"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.boot.accommodation.vp.home.CustomViewPager
+        android:id="@+id/homePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_top"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/JocoTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ivDotMenu"
+        android:layout_margin="@dimen/margin_large"
+        android:padding="@dimen/padding_large_more"
+        android:gravity="center"
+        android:text="@string/text_change_password"/>
+
+    <com.boot.accommodation.common.control.JoCoEditText
+        android:id="@+id/etOldPass"
+        style="@style/JocoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/padding_large"
+        android:inputType="textPassword"
+        android:hint="@string/text_current_password"/>
+
+    <View
+        style="@style/JocoView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/grey_bg"/>
+
+    <com.boot.accommodation.common.control.JoCoEditText
+        android:id="@+id/etNewPass"
+        style="@style/JocoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/padding_large"
+        android:inputType="textPassword"
+        android:hint="@string/text_new_password"/>
+
+    <View
+        style="@style/JocoView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/grey_bg"/>
+
+    <com.boot.accommodation.common.control.JoCoEditText
+        android:id="@+id/etRetype"
+        style="@style/JocoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/padding_large"
+        android:inputType="textPassword"
+        android:hint="@string/text_retype"/>
+
+    <View
+        style="@style/JocoView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/grey_bg"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/JocoTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/text_filter_location"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large_bottom"
+        android:layout_marginLeft="@dimen/margin_large_left"
+        android:layout_marginRight="@dimen/margin_large_right"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="vertical">
+
+        <com.boot.accommodation.common.control.JoCoEditText
+            android:id="@+id/etToponym"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:completionThreshold="1"
+            android:cursorVisible="false"
+            android:hint="@string/text_province_famous_place"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="0dp"
+            android:paddingTop="@dimen/padding_top"
+            ></com.boot.accommodation.common.control.JoCoEditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/JocoTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="0dp"
+        android:background="@color/grey_bg"
+        android:gravity="left"
+        android:text="@string/text_category"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

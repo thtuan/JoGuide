@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/llItineraryLeft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/avatar_height_xla"
+                android:layout_height="@dimen/avatar_height_xla"
+                android:duplicateParentState="true">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/ivPhotoLeft"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/header"
+                        app:siBorderColor="@color/primary_500"
+                        app:siBorderWidth="2dp"/>
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/ivMaskRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_large"
+                        android:duplicateParentState="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/itinerary_circular_trans"
+                        app:siBorderColor="@color/white"
+                        app:siBorderWidth="1dp"/>
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/vLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/selector_bg_avatar">
+                    </com.github.siyamed.shapeimageview.CircularImageView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameLeft"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tvDurationLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivLineLeft"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_large"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@color/primary_500"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llItineraryRight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/ivLineRight"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_large"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/primary_500"/>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/avatar_width_xla"
+                android:layout_height="@dimen/avatar_height_xla">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/ivPhotoRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/header"
+                        android:scaleType="centerCrop"
+                        app:siBorderColor="@color/primary_500"
+                        app:siBorderWidth="2dp"/>
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/ivMaskLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_large"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/itinerary_circular_trans"
+                        app:siBorderColor="@color/white"
+                        app:siBorderWidth="1dp"/>
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/vRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_bg_avatar"
+                        android:scaleType="fitXY">
+                    </com.github.siyamed.shapeimageview.CircularImageView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameRight"
+                        style="@style/JocoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tvDurationRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLineTop"
+        android:layout_width="@dimen/margin_large"
+        android:layout_height="69dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/primary_500"/>
+
+    <ImageView
+        android:id="@+id/ivLineBottom"
+        android:layout_width="@dimen/margin_large"
+        android:layout_height="69dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/primary_500"/>
+</FrameLayout>

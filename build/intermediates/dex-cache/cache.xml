@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_98f17f3649b42814fcfeff7a4873785a4f452a18\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_5bfb20002ec5989433cf4099d7b5a7a7b25f93c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_552a7d2cc0d90d8b005b80e4efa5bf89417bd7fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ad5bb101ced4d3939225c9b57e5a3d81547c1fbb">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-beta-1.1.4_01fdf41bc68f4eb03c83ed66a7cfd2ca6f86be9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\palette-v7\23.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="897400f08e8b3f5e290a5da388973f7cfe700965">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-23.2.0_2fe4babd84999a954b2b91f8e5856aacd0a7bf30\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_57336b6e30d095f4376b122d39db0e9a83d5c7b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.github.grennis\ExpandableRecyclerView\0.9.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="88e6b32ca4503910adf36e1b0a93074dd854bfed">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.grennis-ExpandableRecyclerView-0.9.3_f731d5dc79609b632c7bd54ca8132e39cf6956b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-8.4.0_5f397b3dd6d157aba74376f8faa152647d802935\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-8.4.0_cf9edee274646dfaeb45ea4b618272ee46cce829\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.2.5\e135072797f494a3b6cb10640dd8c6495261b9ac\MPAndroidChart-v2.2.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e135072797f494a3b6cb10640dd8c6495261b9ac">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.2.5_ced5e73396ddf6f5992a6226af172db3e8794c0b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.0-beta4\de5935a367ba5e343e9df786ac8fc0c7d52b5f0c\converter-gson-2.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de5935a367ba5e343e9df786ac8fc0c7d52b5f0c">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.0-beta4_98966f8c4afae828e1c81ba094043628097db44e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_528b7caafbf0ed69acf912d5f0f17fd7ae79aff3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_7d1b69572d1e270ca84a406826d75e7ebbf8ecbb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_7a507ae3f456b7e03fb028d1015a6347a0b55d62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_7f116ae098cefb440d10dfeac02e2c971f3ab45f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-8.4.0_a4f52af876c4c806b44d1fdd349ecfb08e1ea3ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.tonicartos\superslim\0.4.13\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8adfd82229a5f0a129469305587557199017219e">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.tonicartos-superslim-0.4.13_886e396655692418216c47cd804c1716beb16048\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.4.0_4910cf0a383d3796203b5f0a284d83ac9e5d7bde\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\1.0.4\4f7392b86e064f3f6da06977f54c21a48e6b6871\parceler-api-1.0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4f7392b86e064f3f6da06977f54c21a48e6b6871">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\parceler-api-1.0.4_ff738c422b2331b9d4ae291499d3feba2100f951\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.flaviofaria\kenburnsview\1.0.7\ce4e8bba9e026dd29f8110b2f6bb1fc4ecbdd9b1\kenburnsview-1.0.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ce4e8bba9e026dd29f8110b2f6bb1fc4ecbdd9b1">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\kenburnsview-1.0.7_1def033d802b76879f7cc89caf9cde073837e09d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.github.siyamed\android-shape-imageview\0.9.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ee07783aa59eefdeacc107abf472f45f60272302">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.siyamed-android-shape-imageview-0.9.3_24d3b9b1beb1e41256505e2e4f52206995842605\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-8.4.0_e868600156401d6805fd84a9bdaa8c1ba2af5e8a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_568f2a7419fcf45c8b156b870f0879da6b079844\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="927e8ef5711b115b65b2f35495d77352be2b3c09">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\io.reactivex-rxandroid-1.2.0_72b683d8d56983936e2c3d38d8efd9eaa188a424\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-8.4.0_325e22c0a6e40e06ececfa43712aa8f089bfa14f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.github.worker8\tourguide\1.0.17-SNAPSHOT\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8fc5b2d799afab49b7642fd6204633fc75e31eac">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.worker8-tourguide-1.0.17-SNAPSHOT_f12d50cf37f7f8b1b9e5b9bcefbcd6051849479a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="611605b6b640c1558f9bdea41de8ff837ab68ca8">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-crashlytics-2.5.5_b82faae36fd55c3d2c4e8b55f0c979b89b930ca6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_ee6962fd7e297e69b9cc11684dc3da4f60e34eee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\net.i2p.android.ext\floatingactionbutton\1.9.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7c5e4db194c6ec3e62b70759ef913381ea4903d1">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\net.i2p.android.ext-floatingactionbutton-1.9.0_d28f831a5a84e2ed3d47fd9c9be0ab4dc537752c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f4d7a07120e76988f3a15403838d323c2400db83">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_eff3c8560c0eb6257e7a733627be558577753799\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3e21d5159dc78d948c3efdeed912bfd4f9d26f9c">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_545714ff88cd002e31d33bc798eb01920986455f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_16abcb764f675e3bed6b3dd63e437da3fe20acf0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_329d4ac55d2e15c85d6e8eec3dda7cc7c441e7ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.8\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c9ef45dcbd082cd63aac09a5e2cd443adb5df837">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-crashlytics-core-2.3.8_3bbffa5a602d13648dda44fdf29ded8def208760\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.3.0\8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c\bolts-tasks-1.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.3.0_348523e35bac54564871736db9fc84853cbf2d4b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.koushikdutta.ion\ion\2.1.7\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8bbd470f524833532e041b110abe9e3d514d63eb">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.koushikdutta.ion-ion-2.1.7_98c5efbd7409fcb2101db869618a55bd88972548\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.3.0\bc535105332645408ef5f1380215cc954b842178\bolts-applinks-1.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bc535105332645408ef5f1380215cc954b842178">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.3.0_3bfcd2161547f008ac9d325efd30cf7ddddfa2fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_3545c1803235fd359b51c609f674704dcfad6006\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidSDKTool\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_8d92cb0e6e0a519ba480850d67f54e30b6e8211c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-8.4.0_e1f1ea8966c38e55870f5d19faae5fba9c8e9e43\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.github.citux\datetimepicker\0.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="47a72d25966129c3260bf7d4b05fd8795032b749">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.citux-datetimepicker-0.2.0_cdf44a48a6f6471c1dc7de2f8ea8f40de96492eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_80662666504f7c5c68e5b410183658ce35c9ef5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\uk.co.chrisjenx\calligraphy\2.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e653e15e62e8a59ddd76cc7f827bf8bce38ae7bb">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\uk.co.chrisjenx-calligraphy-2.1.0_d9abf061ac1c69c69cb3815d1fdd50a26f0e07b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="80d99f08ed2061bba0d7affcd0173cc7c1d8373c">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e89d04faf2201653a27d7d197a28f476fcf8ff8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.10.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.getbase-floatingactionbutton-1.10.1_c14d83835f27feda1c039652c22b758adfa37cba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5ddf5f4817565c9db82613c16093f76640a54e15">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.1.1_56c3c7ab7b2ab82ba53d087aa853e77f0cbcaf5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.0.0-beta3\b2c9a66010be6540ee42c033de4ae43085dc7856\adapter-rxjava-2.0.0-beta3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b2c9a66010be6540ee42c033de4ae43085dc7856">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\adapter-rxjava-2.0.0-beta3_27b3ac827aac7947458a1aa97b1b38b888f863ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.akexorcist\googledirectionlibrary\1.0.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1c4f62b5874f45a6fd3617fa6447714adb7a72a7">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.akexorcist-googledirectionlibrary-1.0.4_6392ddae54eaf4cf5f5ccab9b9aec0036476c682\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.0.1\b34c1f2d993044656e87f88970b6818e99e886ba\okhttp-3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.0.1_f533b0833827f872788b73877d8759519bd5c222\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-7.0.1_b827f464ba3ecdbd40979349b61abb0d0f096bc2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9af3b9b8114e685291aa00e6572b0a9131244956">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-answers-1.3.6_119216f5fb37d305797ad8192d2ef11795200cef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.splitwise\tokenautocomplete\2.0.7\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="da8f28667ce1e112c2087f130725f638a76b3e98">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.splitwise-tokenautocomplete-2.0.7_4b13cf51f5fca33fb8a6dbea867695abeef2f7d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_3809c81af5bed09b1d79f7077ccf22ce6ee96fcc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.10.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bcb4a50f5e2c67b3e84441b1b2a239856776c9b8">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.10.0_9387bd46ad0344040e8e2025aa676987733dadb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.koushikdutta.async\androidasync\2.1.7\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="eace26bfd08119044e19e9fc0f9ae1bdffac83ed">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.koushikdutta.async-androidasync-2.1.7_8db0dab13564f58f35cdd589d6b8a11da251d3e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a5db9a2dd46d84285ef737f65030b74b6e8ee2a4">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\io.fabric.sdk.android-fabric-1.3.10_7102fbafc3112965c6245626181551bdb02c5291\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_ff5c9d459fb56f06df8c6edad8cb0867c7944f53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_cdb7b2fd50db8f06d2f52b5459fbad470ce59ddb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0-beta4\739e00dea1f0ac04fdb9b6160d667e23cc50a791\retrofit-2.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.0-beta4_451b1ab3c5e57301deebced6fe6b17d88fe8bd12\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\thanhtuan\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.4\3cc424c6eda381bf4aee40dc3ccdecc27b2106aa\rxjava-1.1.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3cc424c6eda381bf4aee40dc3ccdecc27b2106aa">
+        <dex dex="D:\AndroidStudioWorkSpace\homestay_android copy\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.1.4_d0fb3e9744f42e73d6565ee606f8284a914f6b4a\classes.dex" />
+    </item>
+
+</items>

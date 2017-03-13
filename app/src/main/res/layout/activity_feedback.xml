@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:background="?attr/colorPrimary"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_icon_bg"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/padding_top"
+            android:src="@drawable/ic_back_white"/>
+
+        <TextView
+            android:id="@+id/tvTitleProfile"
+            style="@style/JocoTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text="@string/text_title_feedback"
+            android:textColor="@color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/border_date_feedback"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:padding="@dimen/padding_small"
+                android:id="@+id/spListTour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="left">
+            </Spinner>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/ic_arrow_down"/>
+        </FrameLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/divider_height_small"-->
+        <!--android:background="@color/grey_bg"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:background="@drawable/border_date_feedback">
+
+            <com.boot.accommodation.common.control.JoCoEditText
+
+                android:id="@+id/edDate"
+                style="@style/JocoView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:hint="@string/text_title_select_date_feedback"/>
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/icon_delete_red"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/grey_bg"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListFeedbeck"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

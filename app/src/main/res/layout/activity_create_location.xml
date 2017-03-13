@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="com.boot.accommodation.vp.category.CategoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:gravity="top"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="visible"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_500">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                style="@style/JocoMenuIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_icon_bg"
+                android:src="@drawable/ic_back_white"/>
+
+            <TextView
+                style="@style/JocoTitleView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_toRightOf="@+id/iv_back"
+                android:background="@drawable/selector_icon_bg"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_back_white"
+                android:text="@string/text_create_new_accommodation"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/iv_post"
+                style="@style/JocoMenuIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_icon_bg"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_done_white"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ncvView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/upload_photo_height"
+                android:addStatesFromChildren="true"
+                android:background="#f4f4f8"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivUploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:padding="@dimen/padding"
+                    android:src="@drawable/img_create_location"/>
+
+                <TextView
+                    style="@style/JocoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/text_tap_to_capture_or_upload_image"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llUploadPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/upload_photo_height"
+                android:visibility="gone">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvUploadPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large">
+
+                <FrameLayout
+                    android:id="@+id/frGoogleMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drag_google_map"></FrameLayout>
+
+                <ImageView
+                    android:id="@+id/ivGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:duplicateParentState="true"
+                    android:src="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/ivFullScreen"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/ic_expand_orange"/>
+            </FrameLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2">
+
+                <TableRow
+                    android:id="@+id/trChooseType"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:singleLine="true"
+                        android:text="@string/text_type"
+                        android:textColor="@color/black"/>
+
+                    <com.boot.accommodation.common.control.JoCoEditText
+                        android:id="@+id/etTypeLocation"
+                        style="@style/JocoView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="@string/text_category_accommodation"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:scrollHorizontally="false"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"/>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:singleLine="true"
+                        android:text="@string/text_name"
+                        android:textColor="@color/black"/>
+
+                    <com.boot.accommodation.common.control.JoCoEditText
+                        android:id="@+id/etNameLocation"
+                        style="@style/JocoView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:ems="10"
+                        android:hint="@string/text_name_accommodation"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:singleLine="true"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"/>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:singleLine="true"
+                        android:text="@string/text_address"
+                        android:textColor="@color/black"/>
+
+                    <com.boot.accommodation.common.control.JoCoEditText
+                        android:id="@+id/etAddressLocation"
+                        style="@style/JocoView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:ems="10"
+                        android:hint="@string/text_address_of_the_location"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"/>
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"/>
+                <TableRow>
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:text="@string/text_price"
+                        android:textColor="@color/black"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <com.boot.accommodation.common.control.JoCoEditText
+                            android:id="@+id/etPriceFrom"
+                            style="@style/JocoView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/etCurrency"
+                            android:background="@drawable/border_edittext"
+                            android:ems="10"
+                            android:hint="@string/text_price_from"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:scrollHorizontally="false"/>
+                        <com.boot.accommodation.common.control.JoCoEditText
+                            android:id="@+id/etPriceTo"
+                            style="@style/JocoView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/etPriceFrom"
+                            android:layout_below="@+id/etPriceFrom"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/border_edittext"
+                            android:ems="10"
+                            android:hint="@string/text_price_to"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:scrollHorizontally="false"/>
+
+                        <com.boot.accommodation.common.control.JoCoEditText
+                            android:id="@+id/etCurrency"
+                            style="@style/JocoView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/border_light_grey"
+                            android:focusable="false"
+                            android:hint="@string/text_unit_price_vnd"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_large"
+                            android:scrollHorizontally="false"
+                            android:text="@string/text_unit_price_vnd"/>
+                    </RelativeLayout>
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"/>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:text="@string/text_phone"
+                        android:textColor="@color/black"/>
+
+                    <com.boot.accommodation.common.control.JoCoEditText
+                        android:id="@+id/etPhoneLocation"
+                        style="@style/JocoView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:hint="@string/text_phone_number_of_the_location"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"/>
+                </TableRow>
+
+                <TableRow android:visibility="gone">
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:singleLine="true"
+                        android:text="@string/text_website"
+                        android:textColor="@color/black"/>
+
+                    <com.boot.accommodation.common.control.JoCoEditText
+                        android:id="@+id/etWebsite"
+                        style="@style/JocoView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:hint="@string/text_website_of_the_location"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"
+                    android:visibility="gone"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:singleLine="true"
+                        android:text="@string/text_out_standing"
+                        android:textColor="@color/black"/>
+
+                    <com.boot.accommodation.common.control.JoCoEditText
+                        android:id="@+id/etOutStanding"
+                        style="@style/JocoView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:gravity="top"
+                        android:hint="@string/text_out_standing_of_location"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:scrollHorizontally="false"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:singleLine="true"
+                        android:text="@string/text_description"
+                        android:textColor="@color/black"/>
+
+                    <com.boot.accommodation.common.control.JoCoEditText
+                        android:id="@+id/etDescription"
+                        style="@style/JocoView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:gravity="top"
+                        android:hint="@string/text_describe_some_thing_about_this_accommodation"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:scrollHorizontally="false"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"/>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/JocoTitleView"
+                        android:maxWidth="150dp"
+                        android:singleLine="true"
+                        android:text="@string/text_best_time_for_go"
+                        android:textColor="@color/black"/>
+
+                    <com.boot.accommodation.common.control.JoCoEditText
+                        android:id="@+id/etBestTimeGo"
+                        style="@style/JocoView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:focusable="false"
+                        android:gravity="top"
+                        android:hint="@string/text_choose_month"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:scrollHorizontally="false"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divider_height_small"
+                    android:background="@color/grey_bg"/>
+
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_post"
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@drawable/selector_icon_bg"
+                android:gravity="center"
+                android:src="@drawable/ic_back_white"
+                android:text="@string/text_create"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

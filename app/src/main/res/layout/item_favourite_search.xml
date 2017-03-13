@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/margin_large"
+    android:gravity="center"
+    android:background="@drawable/selector_bg"
+    android:id="@+id/llFavouriteResult"
+    android:orientation="vertical">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/ivFavouriteResult"
+        android:layout_width="@dimen/avatar_width_la"
+        android:layout_height="@dimen/avatar_height_la"
+        app:siBorderColor="@color/white"
+        style="@style/JocoLargeAvatar"
+        android:layout_centerVertical="true"
+        android:src="@drawable/img_default_error"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvNameFavouriteResult"
+        style="@style/JocoView"
+        android:layout_width="@dimen/avatar_width_la"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:padding="0dp"
+        android:text="Buon Ma thuot"/>
+
+</LinearLayout>

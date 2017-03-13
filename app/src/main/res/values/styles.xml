@@ -1,0 +1,276 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary_500</item>
+        <item name="colorPrimaryDark">@color/primary_700</item>
+        <item name="colorAccent">@color/accent_500</item>
+        <item name="android:textAppearance">@style/Font.Roboto.Regular</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:popupMenuStyle">@style/JocoPopupMenu</item>
+    </style>
+
+    <style name="Font.Roboto.Regular" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+    <style name="Font.Roboto.Italic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Italic.ttf</item>
+    </style>
+
+    <style name="Font.Roboto.Bold" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+    </style>
+
+    <style name="Font.Roboto.Bold.Italic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-BoldItalic.ttf</item>
+    </style>
+
+    <style name="Font.Roboto.Thin" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Thin.ttf</item>
+    </style>
+
+    <style name="Font.Roboto.Thin.Italic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-ThinItalic.ttf</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="JocoForeGround" parent="android:TextAppearance">
+        <item name="android:layout_margin">@dimen/margin_large</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:alpha">0.4</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!--style for rating bar activityLeader Tourist-->
+    <style name="JocoRatingBarMedium" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_star_medium</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxHeight">24dip</item>
+    </style>
+
+    <style name="JocoRatingBarSmall" parent="@android:style/Widget.Holo.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/rating_star_small</item>
+        <!--<item name="android:minHeight">16dip</item>-->
+        <!--<item name="android:maxHeight">16dip</item>-->
+    </style>
+
+
+    <!-- style apply cho tat ca cac view -->
+    <style name="JocoView" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <!--<item name="android:duplicateParentState">true</item>-->
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+    <!-- style apply for view location -->
+    <style name="JocoViewItalic" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <!--<item name="android:duplicateParentState">true</item>-->
+        <item name="fontPath">fonts/Roboto-Italic.ttf</item>
+    </style>
+
+    <!-- style thin chu thang-->
+    <style name="JocoThinViewNormal" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:duplicateParentState">true</item>
+        <!--<item name="android:duplicateParentState">true</item>-->
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+    <!-- Dung cho text tren toolbar-->
+    <style name="JocoTitleView" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+    </style>
+
+    <style name="JocoTitleThinView" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="fontPath">fonts/Roboto-ThinItalic.ttf</item>
+    </style>
+
+    <style name="JocoThinView" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="fontPath">fonts/Roboto-ThinItalic.ttf</item>
+    </style>
+
+    <!--style for text: datetime feedbak (small)-->
+    <style name="JocoThinSmallView" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textSize">@dimen/title_size_small</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="fontPath">fonts/Roboto-ThinItalic.ttf</item>
+    </style>
+
+    <!--facebook style-->
+    <style name="facebookButton">
+        <item name="android:background">@drawable/border_blue_facebook</item>
+        <item name="android:drawableLeft">@drawable/icon_facebook</item>
+        <item name="android:drawablePadding">@dimen/padding_large</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:text">@string/text_facebook</item>
+        <item name="android:padding">@dimen/padding_large_more</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--google style-->
+    <style name="googleButton">
+        <item name="android:background">@drawable/border_orange_google</item>
+        <item name="android:drawableLeft">@drawable/icon_google</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:text">@string/text_google</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Danh cho textview tren background mau den!-->
+    <style name="JocoHeaderView" parent="android:TextAppearance">
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+        <item name="android:textSize">@dimen/header_size</item>
+    </style>
+
+    <!--Style for header group-->
+    <style name="JocoThinHeaderGroup" parent="android:TextAppearance">
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="fontPath">fonts/Roboto-Thin.ttf</item>
+    </style>
+
+    <!--Style floating button-->
+    <style name="JocoFloatingActionButton" parent="Widget.Design.FloatingActionButton">
+        <item name="fab_colorNormal">@color/primary_500</item>
+        <item name="fab_colorPressed">@color/primary_700</item>
+        <item name="backgroundTint">@color/primary_500</item>
+        <item name="android:layout_margin">@dimen/margin_large</item>
+    </style>
+
+    <!--Style floating button-->
+    <style name="JocoFloatingActionButtonGroup" parent="Widget.Design.FloatingActionButton">
+        <item name="fab_colorNormal">@color/primary_500</item>
+        <item name="fab_colorPressed">@color/primary_700</item>
+        <item name="backgroundTint">@color/primary_500</item>
+    </style>
+
+    <!--Danh cho avatar nho(tourist, owner avatar)-->
+    <style name="JocoSmallAvatar">
+        <item name="siBorderColor">@color/primary_500</item>
+        <item name="siBorderWidth">@dimen/border_size_small</item>
+        <item name="android:layout_width">@dimen/avatar_width</item>
+        <item name="android:layout_height">@dimen/avatar_height</item>
+    </style>
+
+    <!--Danh cho avatar lon(tourist, owner avatar)-->
+    <style name="JocoLargeAvatar">
+        <item name="siBorderColor">@color/primary_500</item>
+        <item name="siBorderWidth">@dimen/border_size_large</item>
+        <item name="android:layout_width">@dimen/avatar_width_la</item>
+        <item name="android:layout_height">@dimen/avatar_height_la</item>
+    </style>
+
+    <!--Style tab-->
+    <style name="JoCoNavigationTab" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/selector_bg</item>
+        <item name="tabSelectedTextColor">@color/primary_700</item>
+        <item name="tabIndicatorColor">@color/primary_500</item>
+        <item name="tabTextAppearance">@style/NavigationTabTextAppeareance</item>
+    </style>
+
+    <style name="NavigationTabTextAppeareance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/primary_500</item>
+    </style>
+
+    <!--Style menu icon-->
+    <style name="JocoMenuIcon">
+        <item name="android:paddingBottom">@dimen/padding_bottom</item>
+        <item name="android:paddingLeft">@dimen/padding_large_more</item>
+        <item name="android:paddingRight">@dimen/padding_large_more</item>
+        <item name="android:paddingTop">@dimen/padding_top</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="JocoPopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="JocoLogin" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <!--<item name="windowActionBarOverlay">false</item>-->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimary">@color/primary_500</item>
+        <item name="colorPrimaryDark">@color/primary_700</item>
+        <item name="colorAccent">@color/accent_500</item>
+        <item name="android:textAppearance">@style/Font.Roboto.Regular</item>
+        <item name="android:popupMenuStyle">@style/JocoPopupMenu</item>
+    </style>
+
+</resources>

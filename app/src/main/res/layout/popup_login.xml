@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                style="@style/JocoHeaderView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_login"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.boot.accommodation.common.control.JoCoEditText
+                    android:id="@+id/etEmail"
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/text_email_or_phone"
+                    android:imeOptions="actionNext"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_large"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_bg"></View>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_top_login"
+                android:layout_marginTop="@dimen/margin_top_login"
+                android:orientation="vertical">
+
+                <com.boot.accommodation.common.control.JoCoEditText
+                    android:id="@+id/etPassword"
+                    style="@style/JocoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/text_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_large"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_bg"></View>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_login"
+                android:background="@drawable/border_button_login"
+                android:text="@string/text_login"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/margin_large_bottom"
+                android:layout_marginTop="@dimen/margin_control_login"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="@string/text_forgot_Password"/>
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="@string/text_register_now"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large_bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginRight="@dimen/margin_control_login"
+                        android:src="@drawable/ic_facebook_blue"/>
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/ivFacebook"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginRight="@dimen/margin_control_login"
+                        android:background="@drawable/selector_bg_avatar"></com.github.siyamed.shapeimageview.CircularImageView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_google_red"/>
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/ivGoogle"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginRight="@dimen/margin_control_login"
+                        android:background="@drawable/selector_bg_avatar"></com.github.siyamed.shapeimageview.CircularImageView>
+                </FrameLayout>
+
+                <ImageButton
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_tw_white"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_control_login"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvVietNam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/text_language_name_vi"
+                />
+
+
+            <TextView
+                android:id="@+id/tvSubstraction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_toRightOf="@+id/tvLanguages"
+                android:text=" -  "/>
+
+            <TextView
+                android:id="@+id/tvEnglish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_language_name_en"/>
+
+            <Spinner
+                android:id="@+id/spLanguages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_toRightOf="@+id/tvSubstraction"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:spinnerMode="dropdown"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

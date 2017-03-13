@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSummary"
+        style="@style/JocoTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Mostly Cloudy"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HUMIDITY"/>
+
+        <TextView
+            android:id="@+id/tvHumidity"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="89%"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WINDS"/>
+
+        <TextView
+            android:id="@+id/tvWind"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="89%"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VISIBILITY"/>
+
+        <TextView
+            android:id="@+id/tvVisibility"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="16KM"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUNRISE"/>
+
+        <TextView
+            android:id="@+id/tvSunrise"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="5:45 AM"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUNSET"/>
+
+        <TextView
+            android:id="@+id/tvSunset"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="5:45 AM"/>
+    </RelativeLayout>
+</LinearLayout>

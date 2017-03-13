@@ -1,0 +1,113 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Default margin large view -->
+    <dimen name="margin_large">8dp</dimen>
+    <dimen name="margin_large_left">8dp</dimen>
+    <dimen name="margin_large_right">8dp</dimen>
+    <dimen name="margin_large_top">8dp</dimen>
+    <dimen name="margin_large_bottom">8dp</dimen>
+    <dimen name="margin_xlarge_left">16dp</dimen>
+    <dimen name="margin_xlarge_right">16dp</dimen>
+    <dimen name="margin_xlarge_top">16dp</dimen>
+    <dimen name="margin_xlarge_bottom">16dp</dimen>
+
+    <!-- Default margin large view -->
+    <dimen name="margin_small">2dp</dimen>
+    <dimen name="margin_small_left">2dp</dimen>
+    <dimen name="margin_small_right">2dp</dimen>
+    <dimen name="margin_small_top">2dp</dimen>
+    <dimen name="margin_small_bottom">8dp</dimen>
+
+    <!-- Default margin view -->
+    <dimen name="margin">4dp</dimen>
+    <dimen name="margin_left">4dp</dimen>
+    <dimen name="margin_right">4dp</dimen>
+    <dimen name="margin_top">4dp</dimen>
+    <dimen name="margin_bottom">4dp</dimen>
+
+    <!-- Default padding large view -->
+    <dimen name="padding_large_more">12dp</dimen>
+    <dimen name="padding_large">8dp</dimen>
+    <dimen name="padding_large_left">8dp</dimen>
+    <dimen name="padding_large_right">8dp</dimen>
+    <dimen name="padding_large_top">8dp</dimen>
+    <dimen name="padding_large_bottom">8dp</dimen>
+
+    <!-- Default padding view -->
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding">4dp</dimen>
+    <dimen name="padding_left">4dp</dimen>
+    <dimen name="padding_right">4dp</dimen>
+    <dimen name="padding_top">4dp</dimen>
+    <dimen name="padding_bottom">4dp</dimen>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="min_height">40dp</dimen>
+    <dimen name="height_photo">200dp</dimen>
+
+    <dimen name="photo_width">200dp</dimen>
+    <dimen name="photo_height">100dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="title_size_small">10sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="avatar_width">48dp</dimen>
+    <dimen name="avatar_height">48dp</dimen>
+    <dimen name="avatar_height_me">64dp</dimen> <!--medium-->
+    <dimen name="avatar_width_me">64dp</dimen>
+    <dimen name="avatar_height_la">90dp</dimen> <!--large-->
+    <dimen name="avatar_width_la">90dp</dimen>
+    <dimen name="avatar_height_xla">130dp</dimen> <!--large-->
+    <dimen name="avatar_width_xla">130dp</dimen>
+    <dimen name="header_size">20sp</dimen>
+    <dimen name="logo_width">64dp</dimen>
+    <dimen name="logo_height">64dp</dimen>
+    <dimen name="review_send_width">24dp</dimen>
+    <dimen name="review_send_height">24dp</dimen>
+    <dimen name="image_listtour_feedback">38dp</dimen>
+
+    <!--for layout tourisr leader info-->
+    <dimen name="CollapsingToolbarLayout_Height">270dp</dimen>
+    <dimen name="CollapsingToolbarLayout_Min_Height">130dp</dimen>
+    <dimen name="image_view_height">200dp</dimen>
+    <dimen name="layout_view_height">184dp</dimen>
+    <dimen name="button_like_height">24dp</dimen>
+    <dimen name="button_like_width">60dp</dimen>
+    <dimen name="ratingbar_height">35dp</dimen>
+    <dimen name="edit_text_rate_height">60dp</dimen>
+    <dimen name="image_map_width">66dp</dimen>
+    <dimen name="image_map_height">45dp</dimen>
+    <!--Margin giua cac item trong listview-->
+    <dimen name="divider_height">4dp</dimen>
+    <dimen name="divider_height_small">1dp</dimen>
+    <dimen name="margin_search">10dp</dimen>
+    <dimen name="border_size_small">1dp</dimen>
+    <dimen name="border_size_large">4dp</dimen>
+    <dimen name="header_itinerary">70dp</dimen>
+    <dimen name="pie_chart_height">250dp</dimen>
+    <dimen name="padding_top_login">20dp</dimen>
+    <dimen name="margin_top_login">20dp</dimen>
+    <dimen name="padding_left_login">20dp</dimen>
+    <dimen name="padding_right_login">20dp</dimen>
+    <dimen name="margin_control_login">10dp</dimen>
+    <dimen name="progress_loading_height">20dp</dimen>
+    <dimen name="progress_bar_height">12dp</dimen>
+    <dimen name="progress_bar_width">90dp</dimen>
+    <dimen name="margin_positive">-12dp</dimen>
+    <dimen name="drag_google_map">160dp</dimen>
+    <dimen name="upload_photo_height">120dp</dimen>
+    <dimen name="text_size_small">14dp</dimen>
+    <dimen name="text_size_phone">140dp</dimen>
+    <dimen name="custom_showcase_width">320dp</dimen>
+    <dimen name="custom_showcase_height">60dp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_money">14sp</dimen>
+    <dimen name="margin_left_search">12dp</dimen>
+    <dimen name="margin_right_search">12dp</dimen>
+</resources>

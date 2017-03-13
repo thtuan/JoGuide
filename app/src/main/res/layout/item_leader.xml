@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rlGoLeaderInfo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/selector_bg"
+        android:id="@+id/rlGoLeaderProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ivAvatar"
+            style="@style/JocoSmallAvatar"
+            android:layout_margin="@dimen/margin_large"
+            android:src="@drawable/img_default_error"/>
+
+        <TextView
+            android:id="@+id/tvTouristName"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Le Thanh Tuan"/>
+
+
+        <LinearLayout
+            android:id="@+id/llCall"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dp"
+            android:layout_toLeftOf="@+id/ivNext"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivTextMesssage"
+                style="@style/JocoView"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_message_green"/>
+
+            <ImageView
+                android:id="@+id/ivCallPhone"
+                style="@style/JocoView"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivNext"
+                android:src="@drawable/ic_call_green"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivNext"
+            style="@style/JocoView"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dp"
+            android:src="@drawable/ic_next_grey"/>
+
+        <TextView
+            android:id="@+id/tvTouristNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvIdTourist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/grey_bg"/>
+</LinearLayout>

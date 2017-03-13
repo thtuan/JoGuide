@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "420950880987",
+    "project_id": "accommodation-159102"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420950880987:android:17ac6f97bf5c6cdf",
+        "android_client_info": {
+          "package_name": "com.boot.accommodation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420950880987-h6v3ihqsds1395kou1toq6vakebekfi1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boot.accommodation",
+            "certificate_hash": "7F14917D1F4E83F063572AB671D98C4556C158BB"
+          }
+        },
+        {
+          "client_id": "420950880987-jjrenq0nucj51c0ed1stb049pmgu8vgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBykXZD8H816Fgd70kCxCepkDsUn5LhA7I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

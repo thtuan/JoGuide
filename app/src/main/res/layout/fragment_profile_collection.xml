@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_header_title">
+
+
+            <TextView
+                android:id="@+id/tvNumFavourite"
+                style="@style/JocoThinHeaderGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_large"
+                android:text="@string/text_favourite_accommodation"/>
+
+
+            <ImageView
+                android:id="@+id/ivNextFavourite"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding_large"
+                android:src="@drawable/ic_next_grey"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFavouriteLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_header_title"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tvNumChecked"
+                style="@style/JocoThinHeaderGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_large"
+                android:text="@string/text_favourite_tour"/>
+
+            <ImageView
+                android:id="@+id/ivNextTour"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding_large"
+                android:src="@drawable/ic_next_grey"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFavouriteTours"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_header_title">
+
+            <TextView
+                android:id="@+id/tvNumPlaceCreated"
+                style="@style/JocoThinHeaderGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_large"
+                android:text="@string/text_accommodation_created"/>
+
+            <ImageView
+                android:id="@+id/ivNextPlaceCreated"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding_large"
+                android:src="@drawable/ic_next_grey"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPlaceCreated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_header_title"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tvNumTourCreated"
+                style="@style/JocoThinHeaderGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_large"
+                android:text="@string/text_tour_created"/>
+
+            <ImageView
+                android:id="@+id/ivNextTourCreated"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding_large"
+                android:src="@drawable/ic_next_grey"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTourCreated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_header_title">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/JocoThinHeaderGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_for_profile_info"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg">
+
+            <TextView
+                android:id="@+id/tvFullName"
+                style="@style/JocoView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_for_full_name"/>
+
+            <com.boot.accommodation.common.control.JoCoEditText
+                android:id="@+id/tvFullNameValue"
+                style="@style/JocoView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="3"
+                android:background="@android:color/transparent"
+                android:ellipsize="start"
+                android:focusable="false"
+                android:gravity="right"
+                android:lines="1"
+                android:text=""/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height_small"
+            android:background="@color/grey_bg"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/JocoView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_for_email"/>
+
+            <com.boot.accommodation.common.control.JoCoEditText
+                android:id="@+id/tvEmailValue"
+                style="@style/JocoView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="3"
+                android:background="@android:color/transparent"
+                android:ellipsize="start"
+                android:focusable="false"
+                android:gravity="right"
+                android:lines="1"
+                android:text=""
+                android:textColor="@color/grey_for_word_profile"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height_small"
+            android:background="@color/grey_bg"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg">
+
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/JocoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_for_phone"/>
+
+
+            <LinearLayout
+                android:id="@+id/llCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/ivTextMesssage"
+                    style="@style/JocoView"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_message_orange"/>
+
+                <ImageView
+                    android:id="@+id/ivCallPhone"
+                    style="@style/JocoView"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ivNext"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:rotation="180"
+                    android:src="@drawable/ic_phone_orange"/>
+
+                <com.boot.accommodation.common.control.JoCoEditText
+                    android:id="@+id/tvPhoneValue"
+                    style="@style/JocoView"
+                    android:layout_width="@dimen/text_size_phone"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="start"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:text=""
+                    android:textColor="@color/blue_highlight"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height_small"
+            android:background="@color/grey_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg">
+
+            <TextView
+                android:id="@+id/tvWebsite"
+                style="@style/JocoView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_website"/>
+
+            <com.boot.accommodation.common.control.JoCoEditText
+                android:id="@+id/tvWebsiteValue"
+                style="@style/JocoView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="3"
+                android:background="@android:color/transparent"
+                android:ellipsize="start"
+                android:focusable="false"
+                android:gravity="right"
+                android:lines="1"
+                android:text=""
+                android:textColor="@color/blue_highlight"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height_small"
+            android:background="@color/grey_bg"/>
+
+        <LinearLayout
+            android:id="@+id/llListFolow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_header_title">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvAboutWho"
+                        style="@style/JocoThinHeaderGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAboutAdmin"
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

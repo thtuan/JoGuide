@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llRest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/selector_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/ic_rest_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_rest"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/selector_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/ic_eat_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_eat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEntertainment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/selector_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/ic_bar_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_entertainment"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/selector_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/ic_vehicle_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_vehicle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

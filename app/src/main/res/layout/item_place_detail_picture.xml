@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/ivPlaceDetailPictureItem"
+        android:layout_width="match_parent"
+        android:layout_height="75dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_default_error"/>
+
+    <ProgressBar
+        android:id="@+id/prLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_green"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/prLoadingUpload"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="@dimen/avatar_width_la"
+        android:layout_height="@dimen/progress_bar_height"
+        android:layout_gravity="center"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"/>
+
+</FrameLayout>

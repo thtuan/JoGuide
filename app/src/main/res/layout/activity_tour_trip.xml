@@ -1,0 +1,359 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/frRoot"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:id="@+id/crMain"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivTourPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_photo"
+                            android:layout_marginLeft="@dimen/margin_large_left"
+                            android:layout_marginRight="@dimen/padding_large_right"
+                            android:layout_marginTop="@dimen/margin_large_top"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_default_error"/>
+
+                        <ProgressBar
+                            android:id="@+id/prLoading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_large_left"
+                                android:layout_marginRight="@dimen/padding_large_right"
+                                android:alpha="0.4"
+                                android:background="@color/black"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingBottom="@dimen/padding_bottom">
+
+                                <TextView
+                                    android:id="@+id/tvTourName"
+                                    style="@style/JocoHeaderView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_margin="@dimen/margin_large"
+                                    android:layout_toLeftOf="@+id/ivOwnerAvatar"
+                                    android:padding="@dimen/padding_large"
+                                    android:text=""
+                                    android:textColor="@color/white"/>
+
+                                <com.github.siyamed.shapeimageview.CircularImageView
+                                    android:id="@+id/ivOwnerAvatar"
+                                    style="@style/JocoSmallAvatar"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                    app:siBorderColor="@color/white"/>
+                            </RelativeLayout>
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="top"
+                    android:background="?attr/colorPrimary"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin">
+
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        style="@style/JocoMenuIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_icon_bg"
+                        android:src="@drawable/ic_back_white"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/JocoTitleView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="0dp"
+                            android:layout_toLeftOf="@+id/ivDotMenu"
+                            android:padding="0dp"
+                            android:text="@string/text_tour_detail"
+                            android:textColor="@color/white"/>
+
+                        <ImageView
+                            android:id="@+id/ivDotMenu"
+                            style="@style/JocoMenuIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/selector_icon_bg"
+                            android:src="@drawable/ic_dot_menu_white"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/htab_tabs"
+                style="@style/JoCoNavigationTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fillViewport="true"
+                android:padding="0dp"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/primary_500"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/primary_500"
+                app:tabTextColor="@color/primary_500"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <com.boot.accommodation.vp.home.CustomViewPager
+            android:id="@+id/htab_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fbAddNotification"
+            style="@style/JocoFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_plus_fill_white"
+            android:visibility="gone"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/llMenuDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/grey_bg"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llJoinTour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/ic_door_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_join"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/divider_height_small"
+            android:background="@drawable/selector_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/ic_share_fill_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_share"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llInvite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/selector_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/ic_user_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_invite"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llVote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/selector_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:src="@drawable/ic_vote_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_vote_tour"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/selector_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:padding="@dimen/padding"
+                android:src="@drawable/ic_call_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_hotline"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/selector_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_large"
+                android:padding="@dimen/padding"
+                android:src="@drawable/ic_feedback_green"/>
+
+            <TextView
+                style="@style/JocoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_feedback"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

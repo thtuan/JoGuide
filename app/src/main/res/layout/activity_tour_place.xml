@@ -1,0 +1,142 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_photo"
+                        android:layout_marginLeft="@dimen/margin_large_left"
+                        android:layout_marginRight="@dimen/padding_large_right"
+                        android:layout_marginTop="@dimen/margin_large_top"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_default_error" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_large_left"
+                            android:layout_marginRight="@dimen/padding_large_right"
+                            android:alpha="0.4"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/tvTourPlace"
+                            style="@style/JocoHeaderView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_toLeftOf="@+id/ivOwnerAvatar"
+                            android:padding="@dimen/padding_large"
+                            android:textColor="@color/white" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="top"
+                android:background="?attr/colorPrimary"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_icon_bg"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/padding_top"
+                    android:src="@drawable/ic_back_white" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tvTour"
+                        style="@style/JocoTitleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/ivLocation"
+                        android:text="3 days in hoi an"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/ivLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/selector_icon_bg"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/padding_top"
+                        android:src="@drawable/ic_location_white" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- <com.joco.app.vp.home.CustomViewPager
+         android:id="@+id/vpTourPlace"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="@dimen/margin_top"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+    <FrameLayout
+        android:id="@+id/frDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_top"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabDirection"
+        style="@style/JocoFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_direction_white"
+        app:fabSize="normal" />
+
+    <!-- <include layout="@layout/fab_dot_layout"/>-->
+</android.support.design.widget.CoordinatorLayout>

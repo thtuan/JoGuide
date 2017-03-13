@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:orientation="horizontal"
+    >
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/ivPlaceDetailUserAvatar"
+        style="@style/JocoSmallAvatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_large_left"
+        android:layout_marginTop="@dimen/margin_large_top"
+        android:src="@drawable/img_default_error"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/llDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvCreateUser"
+            style="@style/JocoTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Font.Roboto.Thin.Italic"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvCreateDate"
+            style="@style/JocoThinSmallView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+</LinearLayout>

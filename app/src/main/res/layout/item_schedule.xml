@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivIconSchedule"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            style="@style/JocoView"/>
+        <TextView
+            android:id="@+id/tvSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/JocoView"/>
+    </LinearLayout>
+
+</LinearLayout>

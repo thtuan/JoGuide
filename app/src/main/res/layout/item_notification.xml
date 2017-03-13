@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/ivAvatarNotification"
+                style="@style/JocoSmallAvatar"
+                android:layout_margin="@dimen/margin"
+                android:src="@drawable/img_default_error"/>
+
+            <ImageView
+                android:id="@+id/ivNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:src="@drawable/ic_new"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tvTitleNotification"
+                    style="@style/JocoTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:drawablePadding="@dimen/padding"
+                    android:padding="0dp"
+                    android:text="@string/text_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvDetailNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Detail"
+                android:textColor="@color/text_color"/>
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                style="@style/JocoThinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="0dp"
+                android:drawablePadding="@dimen/padding"
+                android:drawableRight="@drawable/ic_clock_white"
+                android:gravity="end"
+                android:text="date time"
+                android:textAppearance="?attr/textAppearanceSmallPopupMenu"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/grey_bg"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/rlGoLeaderInfo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlGoTouristProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg"
+        android:orientation="vertical">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="@dimen/avatar_width"
+            android:layout_height="@dimen/avatar_height"
+            android:layout_margin="@dimen/margin_large"
+            android:src="@drawable/img_default_error"
+            style="@style/JocoSmallAvatar"/>
+
+        <TextView
+            android:id="@+id/tvTouristName"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Lee Nguyen"/>
+
+
+        <TextView
+            android:id="@+id/tvTouristNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvIdTourist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivPosition"
+            style="@style/JocoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_map_green"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_small"
+        android:background="@color/grey_bg"/>
+</LinearLayout>
