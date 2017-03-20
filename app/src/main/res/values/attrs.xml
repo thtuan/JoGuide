@@ -7,4 +7,7 @@
         <attr name="startHeight" format="dimension"/>
         <attr name="finalHeight" format="dimension"/>
     </declare-styleable>
+    <declare-styleable name="CalendarDateElement">
+        <attr name="dateFormat" format="string"/>
+    </declare-styleable>
 </resources>

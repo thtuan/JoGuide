@@ -482,4 +482,12 @@
     <string name="text_create_location_success">Create your location success, please into your profile to view
         created location</string>
     <string name="text_pick_location">Pick location</string>
+    <string name="text_type_profesional">Professional</string>
+    <string name="text_type_native">Native</string>
+    <string name="text_tourguide_filter">Tour guide filter</string>
+    <string name="text_event_name">Event name</string>
+    <string name="text_detail_tour_guide">Tour guide</string>
+    <string name="text_choose_period_of_time">Choose period of time</string>
+    <string name="text_from">from</string>
+    <string name="text_type_student">Student</string>
 </resources>

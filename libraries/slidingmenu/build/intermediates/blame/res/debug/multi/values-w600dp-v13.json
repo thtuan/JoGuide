@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-v13\\values-w600dp-v13.xml",
+        "outputFile": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 114
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
+                    "file": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/values-w600dp-v13/values-w600dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 169
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
+                    "file": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/values-w600dp-v13/values-w600dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,

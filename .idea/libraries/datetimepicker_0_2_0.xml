@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="datetimepicker-0.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/39c100d6f4d864c51893a49748c4316837f027d6/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/39c100d6f4d864c51893a49748c4316837f027d6/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.citux/datetimepicker/0.2.0/bd77b2b7bb1ae3c2e20f263dfba5364ab9b203b9/datetimepicker-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

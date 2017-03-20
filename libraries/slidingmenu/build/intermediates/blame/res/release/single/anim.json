@@ -1,42 +1,42 @@
 [
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_fade_out.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_popup_enter.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_popup_exit.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_popup_enter.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_fade_in.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
-        "source": "D:\\AndroidStudioWorkSpace\\homestay_android copy\\libraries\\slidingmenu\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_fade_out.xml"
+        "merged": "/Users/thtuan/AndroidStudioWorkSpace/tourguide/libraries/slidingmenu/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/thtuan/.android/build-cache/8f151c2731553a2f8cc514e94321d2b7302a9574/output/res/anim/abc_popup_exit.xml"
     }
 ]

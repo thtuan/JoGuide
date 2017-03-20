@@ -1,5 +1,7 @@
 package com.boot.accommodation.dto.view;
 
+import java.util.List;
+
 /**
  * Dto tourguide for expand list tourinfo
  *
@@ -12,9 +14,14 @@ public class TourGuideDTO extends  BaseDTO {
     private String image;//TourGuide image
     private String email;//email of TourGuide
     private String phone;//phone number of TourGuide
+    private String town;// a place where tour guide activate;
+    private String sumary; // description about tour guide
+    private String currentAddress; //current address
+
+    private IdCardDTO idCard; // ID card information
     private LocationDTO location;//loction of TourGuide
     private int typeUser;
-
+    private List<TourGuideEventDTO> tourGuideEvents;
     public TourGuideDTO(){}
 
     public TourGuideDTO(String id, String name,String phone,  String email, int typeUser,String image,
@@ -26,6 +33,14 @@ public class TourGuideDTO extends  BaseDTO {
         this.typeUser = typeUser;
         this.image = image;
         this.location = location;
+    }
+
+    public List<TourGuideEventDTO> getTourGuideEvents() {
+        return tourGuideEvents;
+    }
+
+    public void setTourGuideEvents(List<TourGuideEventDTO> tourGuideEvents) {
+        this.tourGuideEvents = tourGuideEvents;
     }
 
     public int getTypeUser() {
@@ -82,5 +97,13 @@ public class TourGuideDTO extends  BaseDTO {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getTown() {
+        return town;
+    }
+
+    public void setTown(String town) {
+        this.town = town;
     }
 }

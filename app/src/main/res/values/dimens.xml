@@ -110,4 +110,8 @@
     <dimen name="font_size_money">14sp</dimen>
     <dimen name="margin_left_search">12dp</dimen>
     <dimen name="margin_right_search">12dp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="name_width">240dp</dimen>
+    <dimen name="text_size">16dp</dimen>
+    <dimen name="detail_dropdown_height">80dp</dimen>
 </resources>

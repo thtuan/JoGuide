@@ -117,7 +117,7 @@
                     android:layout_height="@dimen/review_send_height"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/margin_large_right"
-                    android:background="@drawable/ic_send_green"/>
+                    android:background="@drawable/ic_send_orange"/>
             </LinearLayout>
         </LinearLayout>
 

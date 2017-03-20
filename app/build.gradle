@@ -20,7 +20,7 @@ repositories {
 }
 repositories {
     mavenCentral()
-    maven(){
+    maven() {
         url "https://oss.sonatype.org/content/repositories/snapshots"
     }
 }
@@ -36,7 +36,7 @@ android {
         }
     }
     compileSdkVersion 23
-    buildToolsVersion '23.0.3'
+    buildToolsVersion '25.0.2'
     defaultConfig {
         applicationId "com.boot.accommodation"
         minSdkVersion 16
@@ -76,7 +76,7 @@ dependencies {
     compile(project(':libraries:slidingmenu')) {
         exclude group: 'com.android.support'
     }
-    
+
     compile('com.google.android.gms:play-services-location:8.4.0') {
         exclude group: 'com.android.support'
     }
@@ -101,7 +101,6 @@ dependencies {
         exclude group: 'com.google.android.gms', module: 'play-services-base'
         exclude group: 'com.google.android.gms', module: 'play-services-basement'
     }
-    compile 'com.google.android.gms:play-services-analytics:8.4.0'
     compile('com.facebook.android:facebook-android-sdk:4.10.0') {
         exclude group: 'com.android.support', module: 'support-annotations'
         exclude group: 'com.android.support', module: 'support-v4'
@@ -118,10 +117,6 @@ dependencies {
     compile('uk.co.chrisjenx:calligraphy:2.1.0') {
         exclude group: 'com.android.support'
     }
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.flaviofaria:kenburnsview:1.0.7'
-    compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
     compile('com.squareup.retrofit2:converter-gson:2.0.0-beta3') {
         exclude module: 'retrofit'
     }
@@ -131,23 +126,30 @@ dependencies {
         exclude group: 'com.squareup.retrofit2', module: 'retrofit'
         exclude group: 'io.reactivex', module: 'rxandroid'
     }
-    compile 'com.android.support:design:23.3.0'
-    compile 'com.android.support:multidex:1.0.0'
-    compile 'com.getbase:floatingactionbutton:1.10.1'
     compile('com.github.citux:datetimepicker:0.2.0') {
         exclude group: 'com.android.support', module: 'support-annotations'
         exclude group: 'com.android.support', module: 'support-v4'
     }
-    compile 'io.reactivex:rxandroid:1.2.0'
     compile('com.tonicartos:superslim:0.4.13') {
         exclude group: 'com.android.support'
     }
+    compile('com.github.worker8:tourguide:1.0.17-SNAPSHOT@aar') {
+        transitive = true
+    }
+
+    compile 'com.google.android.gms:play-services-analytics:8.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'io.reactivex:rxandroid:1.2.0'
     compile 'com.github.grennis:ExpandableRecyclerView:0.9.3'
     compile 'com.akexorcist:googledirectionlibrary:1.0.4'
     compile 'com.github.PhilJay:MPAndroidChart:v2.2.5'
     compile 'com.splitwise:tokenautocomplete:2.0.7@aar'
-    compile ('com.github.worker8:tourguide:1.0.17-SNAPSHOT@aar'){
-        transitive=true
-    }
-
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.roomorama:caldroid:3.0.1'
 }

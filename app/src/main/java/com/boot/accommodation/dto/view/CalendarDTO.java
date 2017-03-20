@@ -2,8 +2,6 @@ package com.boot.accommodation.dto.view;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
-
 
 
 /**
@@ -12,18 +10,11 @@ import java.util.List;
  * @author thtuan
  * @since 2:58 PM 04-09-2016
  */
-public class CalendarDTO implements Serializable{
+public class CalendarDTO implements Serializable {
     private long id;
+    private int currentViewMonth;
+    private boolean isEdit = false;
     private Date date;
-    private List<Meeting> meetings;
-
-    public List<Meeting> getMeetings() {
-        return meetings;
-    }
-
-    public void setMeetings(List<Meeting> meetings) {
-        this.meetings = meetings;
-    }
 
     public Date getDate() {
         return date;
@@ -41,5 +32,19 @@ public class CalendarDTO implements Serializable{
         this.id = id;
     }
 
+    public int getCurrentViewMonth() {
+        return currentViewMonth;
+    }
 
+    public void setCurrentViewMonth(int currentViewMonth) {
+        this.currentViewMonth = currentViewMonth;
+    }
+
+    public boolean isEdit() {
+        return isEdit;
+    }
+
+    public void setEdit(boolean edit) {
+        isEdit = edit;
+    }
 }
