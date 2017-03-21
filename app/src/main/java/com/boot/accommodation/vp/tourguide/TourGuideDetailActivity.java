@@ -16,10 +16,11 @@ import com.github.siyamed.shapeimageview.CircularImageView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-public class TourGuideDetailActivity extends BaseActivity implements View.OnClickListener, TourGuideDetailActivityMgr {
-    @Bind(R.id.iv_menu)
-    ImageView ivMenu;
+public class TourGuideDetailActivity extends BaseActivity implements TourGuideDetailActivityMgr {
+    @Bind(R.id.iv_back)
+    ImageView ivBack;
     @Bind(R.id.tvTitle)
     TextView tvTitle;
     @Bind(R.id.ivEdit)
@@ -58,11 +59,15 @@ public class TourGuideDetailActivity extends BaseActivity implements View.OnClic
 
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
 
+    @OnClick({R.id.iv_back, R.id.ivEdit})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.iv_back:
+                finish();
+                break;
+            case R.id.ivEdit:
+                break;
         }
     }
-
 }

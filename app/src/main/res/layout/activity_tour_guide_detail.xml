@@ -25,7 +25,7 @@
             android:background="@color/primary_500">
 
             <ImageView
-                android:id="@+id/iv_menu"
+                android:id="@+id/iv_back"
                 style="@style/JocoMenuIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
